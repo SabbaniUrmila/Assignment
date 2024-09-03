@@ -16,7 +16,10 @@ struct ListBottomSheetView: View {
                 .font(.headline)
             Text("Total Items: \(viewModel.filteredItemsCount)")
             Text("Top 3 Characters from the list:")
-            ForEach(viewModel.topCharacterCounts, id: \.self) { characterCount in
+            ForEach(
+                viewModel.topCharacterCounts,
+                id: \.self
+            ) { characterCount in
                 Text("\(characterCount.character): \(characterCount.count)")
             }
             

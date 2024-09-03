@@ -46,7 +46,10 @@ struct CarouselView: View {
     
     private func startTimer() {
         stopTimer()
-        timer = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true) { _ in
+        timer = Timer.scheduledTimer(
+            withTimeInterval: 3.0,
+            repeats: true
+        ) { _ in
             withAnimation {
                 currentIndex = (currentIndex + 1) % items.count
             }
