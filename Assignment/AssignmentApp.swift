@@ -15,3 +15,11 @@ struct AssignmentApp: App {
         }
     }
 }
+struct HomeViewControllerWrapper: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> HomeViewController {
+        return HomeViewController()
+    }
+    
+    func updateUIViewController(_ uiViewController: HomeViewController, context: Context) {
+    }
+}

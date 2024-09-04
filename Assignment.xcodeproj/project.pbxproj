@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22029712C87FAE100325DB9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22029702C87FAE100325DB9 /* HomeViewController.swift */; };
+		B22029772C87FC7700325DB9 /* HomeScreenBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22029762C87FC7700325DB9 /* HomeScreenBottomView.swift */; };
+		B22029792C88005100325DB9 /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22029782C88005100325DB9 /* HomeScreenModel.swift */; };
+		B220297B2C88056B00325DB9 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B220297A2C88056B00325DB9 /* HomeScreenViewModel.swift */; };
+		B220297D2C8869A000325DB9 /* HomeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B220297C2C8869A000325DB9 /* HomeListTableViewCell.swift */; };
+		B22029802C886BDD00325DB9 /* HomeViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B220297F2C886BDD00325DB9 /* HomeViewController+Extensions.swift */; };
+		B22029842C88763A00325DB9 /* CarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22029832C88763900325DB9 /* CarouselCell.swift */; };
 		B22EC23B2C86DD83001FEB3F /* AssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22EC23A2C86DD83001FEB3F /* AssignmentApp.swift */; };
 		B22EC23D2C86DD83001FEB3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22EC23C2C86DD83001FEB3F /* ContentView.swift */; };
 		B22EC23F2C86DD84001FEB3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22EC23E2C86DD84001FEB3F /* Assets.xcassets */; };
@@ -21,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B22029702C87FAE100325DB9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B22029762C87FC7700325DB9 /* HomeScreenBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenBottomView.swift; sourceTree = "<group>"; };
+		B22029782C88005100325DB9 /* HomeScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenModel.swift; sourceTree = "<group>"; };
+		B220297A2C88056B00325DB9 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		B220297C2C8869A000325DB9 /* HomeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListTableViewCell.swift; sourceTree = "<group>"; };
+		B220297F2C886BDD00325DB9 /* HomeViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Extensions.swift"; sourceTree = "<group>"; };
+		B22029832C88763900325DB9 /* CarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCell.swift; sourceTree = "<group>"; };
 		B22EC2372C86DD83001FEB3F /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22EC23A2C86DD83001FEB3F /* AssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentApp.swift; sourceTree = "<group>"; };
 		B22EC23C2C86DD83001FEB3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +61,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B22029682C87F58000325DB9 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B22029692C87F59D00325DB9 /* Model */,
+				B220296C2C87F5B600325DB9 /* Views */,
+				B220296D2C87F5C000325DB9 /* ViewModel */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		B22029692C87F59D00325DB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B22029782C88005100325DB9 /* HomeScreenModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B220296C2C87F5B600325DB9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B22029702C87FAE100325DB9 /* HomeViewController.swift */,
+				B22029752C87FC4E00325DB9 /* Cells */,
+				B220297E2C886BBD00325DB9 /* Extensions */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B220296D2C87F5C000325DB9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B220297A2C88056B00325DB9 /* HomeScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B22029752C87FC4E00325DB9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B220297C2C8869A000325DB9 /* HomeListTableViewCell.swift */,
+				B22029832C88763900325DB9 /* CarouselCell.swift */,
+				B22029762C87FC7700325DB9 /* HomeScreenBottomView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B220297E2C886BBD00325DB9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B220297F2C886BDD00325DB9 /* HomeViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B22EC22E2C86DD83001FEB3F = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +136,7 @@
 			children = (
 				B22EC23A2C86DD83001FEB3F /* AssignmentApp.swift */,
 				B22EC2502C8787AF001FEB3F /* Home */,
+				B22029682C87F58000325DB9 /* HomeScreen */,
 				B22EC23E2C86DD84001FEB3F /* Assets.xcassets */,
 				B22EC2402C86DD84001FEB3F /* Assignment.entitlements */,
 				B22EC2412C86DD84001FEB3F /* Preview Content */,
@@ -203,12 +272,19 @@
 			files = (
 				B22EC25F2C878982001FEB3F /* ListBottomSheetView.swift in Sources */,
 				B22EC23D2C86DD83001FEB3F /* ContentView.swift in Sources */,
+				B22029772C87FC7700325DB9 /* HomeScreenBottomView.swift in Sources */,
 				B22EC23B2C86DD83001FEB3F /* AssignmentApp.swift in Sources */,
 				B22EC2562C8788AF001FEB3F /* FloatingActionButton.swift in Sources */,
+				B22029792C88005100325DB9 /* HomeScreenModel.swift in Sources */,
 				B22EC25D2C878906001FEB3F /* ListItemView.swift in Sources */,
+				B22029712C87FAE100325DB9 /* HomeViewController.swift in Sources */,
+				B22029802C886BDD00325DB9 /* HomeViewController+Extensions.swift in Sources */,
+				B220297B2C88056B00325DB9 /* HomeScreenViewModel.swift in Sources */,
 				B22EC25A2C8788ED001FEB3F /* ListView.swift in Sources */,
+				B22029842C88763A00325DB9 /* CarouselCell.swift in Sources */,
 				B22EC24B2C87875F001FEB3F /* HomeModel.swift in Sources */,
 				B22EC2582C8788C0001FEB3F /* CarouselView.swift in Sources */,
+				B220297D2C8869A000325DB9 /* HomeListTableViewCell.swift in Sources */,
 				B22EC2542C878840001FEB3F /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
